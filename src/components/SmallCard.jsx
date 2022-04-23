@@ -3,7 +3,7 @@ import React from 'react';
 function SmallCard({title,color,quantity,icon}) {
     return (
         <>
-            <div className="col-md-3 mb-3">
+            <div className="col-sm-6 col-lg-3 mb-3">
                 <div className={`card border-left-${color} shadow h-100 py-2`}>
                     <div className="card-body">
                         <div className="row no-gutters align-items-center">

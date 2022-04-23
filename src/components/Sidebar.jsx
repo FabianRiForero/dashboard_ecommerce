@@ -20,7 +20,7 @@ function Sidebar() {
 
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
-                    <a className="nav-link" to="/">
+                    <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard - DH movies</span></a>
                 </li>
@@ -33,7 +33,7 @@ function Sidebar() {
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" to="/GenresInDb">
+                    <a className="nav-link" href="/GenresInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Pages</span>
                     </a>
@@ -41,7 +41,7 @@ function Sidebar() {
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" to="/LastMovieInDb">
+                    <a className="nav-link" href="/LastMovieInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
                         <span>Charts</span>
                     </a>
@@ -49,7 +49,7 @@ function Sidebar() {
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                    <a className="nav-link" to="/ContentRowMovies">
+                    <a className="nav-link" href="/ContentRowMovies">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></a>
                 </li>
