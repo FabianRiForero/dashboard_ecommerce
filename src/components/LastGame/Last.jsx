@@ -6,7 +6,8 @@ function Last(){
 
     useEffect(() => {
         async function getGames(){
-            const response = await fetch('http://localhost:3001/api/products/all');
+            const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+            const response = await fetch(`${BACKEND_URL}/api/products/all`);
             const games = await response.json();
             // Obteniendo ultimo id
             let id = 0;
@@ -17,7 +18,7 @@ function Last(){
                     id = game.id
                 }
             });
-            const response1 = await fetch(`http://localhost:3001${games.data[position].detail}`);
+            const response1 = await fetch(`${BACKEND_URL}${games.data[position].detail}`);
             const game = await response1.json();
             setGames(game.data);
         }
