@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 function SmallCard({title,color,quantity,icon}) {
     return (
@@ -20,6 +21,20 @@ function SmallCard({title,color,quantity,icon}) {
             </div>
         </>
     );
+}
+
+SmallCard.defaultProps = {
+    title: 'No title',
+    color: 'info',
+    quantity: 'No quantity',
+    icon: 'fa-clipboard-list'
+}
+
+SmallCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    quantity: PropTypes.oneOfType([PropTypes.string,PropTypes.number]).isRequired,
+    icon: PropTypes.string.isRequired,
 }
 
 export default SmallCard;

@@ -21,8 +21,9 @@ function ContentRowGames(){
 
     useEffect(() => {
         async function getData(){
-            const response1 = await fetch('http://192.168.0.18:3000/api/products/all');
-            const response2 = await fetch('http://192.168.0.18:3000/api/users');
+            const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+            const response1 = await fetch(`${BACKEND_URL}/api/products/all`);
+            const response2 = await fetch(`${BACKEND_URL}/api/users`);
             const games = await response1.json();
             const users = await response2.json();
             const cards = [
