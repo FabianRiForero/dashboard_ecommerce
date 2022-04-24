@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import TopBar from "./TopBar";
 import ContentWrapper from "./ContentWrapper";
+import Last from "./LastGame/Last";
 import Footer from "./Footer";
 
 function Sidebar() {
@@ -51,7 +52,7 @@ function Sidebar() {
 
         {/*<!-- Nav Item - Ultimo Videojuego -->*/}
         <li class="nav-item">
-          <Link class="nav-link" to="/">
+          <Link class="nav-link" to="/lastGame">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Ultimo Videojuego</span>
           </Link>
@@ -91,6 +92,7 @@ function Sidebar() {
             <Routes>
                     {/* <Route exact path="/" element={<ContentWrapper />} /> */}
                     <Route path="/totales" element={<ContentWrapper />} />
+                    <Route path="/lastGame" element={<Last />} />
             </Routes>
             <Footer />
           </div>
