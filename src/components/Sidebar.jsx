@@ -96,7 +96,7 @@ function Sidebar() {
                     <Route path="/totales" element={<ContentWrapper />} />
                     <Route path="/lastGame" element={<Last />} />
                     <Route path="/lastUser" element={<LastU />} />
-                    <Route path="/api/product/:id"  element={<DetailGame />} />
+                    <Route path="/product/:id"  element={<DetailGame />} />
                     
             </Routes>
             <Footer />
