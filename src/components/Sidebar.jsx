@@ -3,6 +3,8 @@ import { Link, Routes, Route } from "react-router-dom";
 import TopBar from "./TopBar";
 import ContentWrapper from "./ContentWrapper";
 import Last from "./LastGame/Last";
+import LastU from "./LastUser/LastU";
+import DetailGame from "./DetailGame/DetailGame"
 import Footer from "./Footer";
 
 function Sidebar() {
@@ -60,7 +62,7 @@ function Sidebar() {
 
         {/*<!-- Nav Item - Ultimo Usuario -->*/}
         <li class="nav-item nav-link">
-          <Link class="nav-link" to="/">
+          <Link class="nav-link" to="/LastUser">
             <i class="fab fa-accusoft"></i>
             <span>Ultimo Usuario</span>
           </Link>
@@ -93,6 +95,9 @@ function Sidebar() {
                     {/* <Route exact path="/" element={<ContentWrapper />} /> */}
                     <Route path="/totales" element={<ContentWrapper />} />
                     <Route path="/lastGame" element={<Last />} />
+                    <Route path="/lastUser" element={<LastU />} />
+                    <Route path="/api/product/:id"  element={<DetailGame />} />
+                    
             </Routes>
             <Footer />
           </div>

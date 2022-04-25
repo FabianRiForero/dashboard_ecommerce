@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LastGame from "./LastGame";
 
+
 function Last(){
     const [games,setGames] = useState([]);
 
@@ -27,7 +28,7 @@ function Last(){
     return(
         <>
             <LastGame {...games} />
-        </>
+        </> 
     );
 }
 
