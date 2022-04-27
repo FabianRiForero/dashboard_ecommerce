@@ -14,7 +14,7 @@ function LastGame({ id, name, description, image }) {
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: 40 + 'rem' }} src={`${process.env.REACT_APP_BACKEND_URL}/${image}`} alt={name} />
                     </div>
                     <p>{description}</p>
-                    <Link className="btn btn-danger" rel="nofollow" to={`/api/product/${id}`}>Ver detalles del videojuego</Link>
+                    <Link className="btn btn-danger" rel="nofollow" to={`/product/${id}`}>Ver detalles del videojuego</Link>
                 </div>
             </div>
         </div>

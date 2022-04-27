@@ -9,7 +9,7 @@ function LastUser({ id, fullname, email, profileimage }) {
                     <div className="card-header py-3">
                         <h5 className="m-0 font-weight-bold text-gray-800">Ultimo usuario registrado {fullname}</h5>
                     </div>
-                    <img src={`${process.env.REACT_APP_BACKEND_URL}${profileimage}`} />
+                    <img src={`${process.env.REACT_APP_BACKEND_URL}${profileimage}`} alt={fullname} />
                     <div className="card-body">
                         <div className="text-center">
                             <p className='h3 text-primary'>Nombre Completo: {fullname}</p>
