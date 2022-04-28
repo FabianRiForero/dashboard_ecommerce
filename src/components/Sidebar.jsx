@@ -94,7 +94,7 @@ function Sidebar() {
           <div id="content">
             <TopBar />
             <Routes>
-                    {/* <Route exact path="/" element={<ContentWrapper />} /> */}
+                    <Route exact path="/" element={<ContentWrapper />} />
                     <Route path="/totales" element={<ContentWrapper />} />
                     <Route path="/lastGame" element={<Last />} />
                     <Route path="/lastUser" element={<LastU />} />

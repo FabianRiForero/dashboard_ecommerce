@@ -23,30 +23,34 @@ function List() {
             {state ?
                 games && games.length > 0 ?
                     <>
-                        <div className="table-responsive px-5">
-                            <table className="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Total Generos</th>
-                                        <th>Total Plataformas</th>
-                                        <th>Accion</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Total Generos</th>
-                                        <th>Total Plataformas</th>
-                                        <th>Accion</th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    {games.map((game, index) => {
-                                        return <GameRow {...game} key={index} />
-                                    })}
-                                </tbody>
-                            </table>
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="table-responsive px-5">
+                                    <table className="table table-bordered bg-white">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Total Generos</th>
+                                                <th>Total Plataformas</th>
+                                                <th>Accion</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Total Generos</th>
+                                                <th>Total Plataformas</th>
+                                                <th>Accion</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            {games.map((game, index) => {
+                                                return <GameRow {...game} key={index} />
+                                            })}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </>
                     :

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 function LastUser({ id, fullname, email, profileimage }) {
     return (
-        <div className="d-flex justify-content-center">
-            <div className="col-lg-6 mb-4">
+        <div className="row justify-content-center">
+            <div className="col-7 col-md-6 col-lg-5 mb-4 p-o">
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
                         <h5 className="m-0 font-weight-bold text-gray-800">Ultimo usuario registrado {fullname}</h5>

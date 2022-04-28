@@ -13,7 +13,6 @@ function DetailGame() {
             const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
             const response = await fetch(`${BACKEND_URL}/api/products/${id}`);
             const game = await response.json();
-            console.log(game.data);
             setGame(game.data);
             setState(true);
         }
@@ -28,21 +27,17 @@ function DetailGame() {
                         <div className="col-12 px-5">
                             <h1 className="h1">{game.name}</h1>
                             <div className="row py-3">
-                                <div className="col-md-6 px-5 d-flex align-items-center">
+                                <div className="col-lg-6 px-5 d-flex align-items-center">
                                     <img className="img-fluid" src={`${process.env.REACT_APP_BACKEND_URL}${game.image}`} alt={game.name} />
                                 </div>
-                                <div className="col-md-6 d-flex align-items-center">
+                                <div className="col-lg-6 d-flex align-items-center justify-content-center my-3">
                                     {game.description}
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-1 px-3 h5">SKU:</div>
-                                <div className="col-3 px-3 h5">{game.sku}</div>
-                                <div className="col-1 px-3 h5">Precio:</div>
-                                <div className="col-3 px-3 h5">$ {game.price}</div>
-                                <div className="col-1 px-3 h5">Stock:</div>
-                                <div className="col-3 px-3 h5">{game.stock}</div>
-                                <div className="col-6"></div>
+                            <div className="row my-3">
+                                <div className="col-md-6 col-lg-4 px-3 h5">SKU: {game.sku}</div>
+                                <div className="col-md-6 col-lg-4 px-3 h5">Precio: $ {game.price}</div>
+                                <div className="col-md-6 col-lg-4 px-3 h5">Stock: {game.stock}</div>
                             </div>
                             <div className="row py-3">
                                 {game.genres.length > 0 &&
