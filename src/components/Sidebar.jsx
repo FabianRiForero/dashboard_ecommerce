@@ -39,12 +39,12 @@ function Sidebar() {
         <div className="sidebar-heading">Actions</div>
 
         {/*<!-- Nav Item - Pages -->*/}
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" to="/">
             <i className="fas fa-fw fa-folder"></i>
             <span>Pages</span>
           </Link>
-        </li>
+        </li> */}
 
         {/*<!-- Nav Item - Totales -->*/}
         <li className="nav-item">
@@ -64,7 +64,7 @@ function Sidebar() {
 
         {/*<!-- Nav Item - Ultimo Usuario -->*/}
         <li className="nav-item nav-link">
-          <Link className="nav-link" to="/LastUser">
+          <Link className="nav-link" to="/lastUser">
             <i className="fab fa-accusoft"></i>
             <span>Ultimo Usuario</span>
           </Link>
