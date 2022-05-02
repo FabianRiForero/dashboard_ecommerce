@@ -1,9 +1,15 @@
-import React from "react";
-
-function ContentWrapper(){
-    return(
+import React from 'react';
+import ContentRowTop from './ContentRowTop';
+function ContentWrapper() {
+    return (
         <>
-            Hello World
+            {/*<!-- Content Wrapper -->*/}
+            <div id="content-wrapper" className="d-flex flex-column">
+                {/*<!-- Main Content -->*/}
+                <div id="content">
+                    <ContentRowTop />
+                </div>
+            </div>
         </>
     );
 }
