@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Dashboard Games Pro Shop
+Proyecto Integrador equipo 2 -Digital House
+## Descripcion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un Dashboard de administrador donde podemos ver detalladamente los productos y usuarios del proyecto integrador Game Pro shop
+## Integrantes
+- Fabián Forero -> Colombiano residente de bogotá, Técnologo en Análisis y Desarrollo de Sistemas de Información
+- Johan Mauricio Peñuela -> Colombiano residente de Bogotá, Técnologo Industrial Me gusta estar en constante aprendizaje
+- Jaime Andrés Artunduaga -> Estudiante de Ingeniería Multimedia de la ciudad de Cali, que le gusta la tecnología y aprender nuevas cosas cada día.  
+- Sergio Andres Castro -> estudiante de producción musical y emprendedor en remates industriales y reciclaje, me gusta la música y la combinación de saberes.
 
-## Available Scripts
+# Games Pro Shop Dashboard
+## Instalacion del proyecto
+Para instalar el proyecto en su equipo y utilizarlo debe tener instalado los siguientes programas:
+- NodeJS
+- Git
+- Navegador
+- XAMPP (contiene phpmyadmin y MySQL)
 
-In the project directory, you can run:
 
-### `npm start`
+### Instalacion del proyecto en el equipo
+En este mismo repositorio a principios de la pagina hay un boton de color verde con el texto **code** al dar click en el hay dos opciones que podemos usar para tener el proyecto en el equipo:
+1. La primera es la URL que nos esta dando, la copiamos y abrimos la terminal de git bash o la que sea de su preferencia y nos ubicamos en la carpeta donde se instalara. Una vez ubicado en la carpeta en la que se instalara ejecutamos el siguiente comando ``` git clone URL ``` donde sustituiremos la URL por la que copiamos del repositorio, cuando termine la instalacion ejecutamos el comando ``` npm install ``` para instalar las dependencias necesarias para que funcione el proyecto.
+2. La segunda opcion es la opcion **Download ZIP**, damos click y comenzara a descargarnos el proyecto. Una vez descargado descomprimir el proyecto en la carpeta donde lo colocaremos y esperamos a que se descomprima. Una vez descomprimido accedemos a la terminal git bash o la que sea de preferencia y nos ubicamos en la carpeta descomprimida (la carpeta debe tener la carpetas public y src junto con otros archivos) y ejecutamos el comando ``` npm install ``` para instalar las dependencias necesarias para que funcione el proyecto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Ejecucion del proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Una vez instalado el proyecto junto con las dependencias y configurado la base de datos ejecutamos la terminal git bash o la de su preferencia y nos ubicamos en la carpeta del proyecto donde ejecutaremos uno de los dos siguientes comandos ``` npm start ``` o ``` npx nodemon src/app.js ```. Tener en cuenta que como minimo ademas de ejecutar el comando en la terminal en XAMPP tener corriendo MySQL y finalmente ingresamos en el navegador al siguiente link http://localhost:3001/ , o dentro el archivo `.env.local` se puede cambiar la direccion por la de su preferencia por ejemplo http://localhost:5000/ para poder navegar en la pagina.
+No olvidar antes tambien iniciar el proyecto Games Pro Shop del siguiente repositorio https://github.com/jaimeandres77/grupo_2_Ecomerce.git para no tener ningun tipo de error en el dashboard de Games Pro shop.
