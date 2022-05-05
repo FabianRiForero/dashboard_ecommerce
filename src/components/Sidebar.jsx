@@ -8,16 +8,18 @@ import DetailGame from "./DetailGame/DetailGame"
 import Footer from "./Footer";
 import CategoriesInDB from "./Categories/CategoriesInDB";
 import List from "./GameList/List";
+import ContentRowTop from "./ContentRowTop";
+import logo from "../assets/img/mainLogo.png";
 
 function Sidebar() {
   return (
     <>
       {/*<!-- Sidebar -->*/}
-      <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <ul className="navbar-nav sidebar sidebar-dark accordion" style={{backgroundColor: '#682D63'}} id="accordionSidebar">
         {/*<!-- Sidebar - Brand -->*/}
         <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
           <div className="sidebar-brand-icon">
-            <img className="w-100" src="" alt="Games Pro Shop" />
+            <img className="" style={{height: '60px'}} src={logo}  alt="Games Pro Shop" />
           </div>
         </Link>
 
@@ -95,7 +97,7 @@ function Sidebar() {
             <TopBar />
             <Routes>
                     <Route exact path="/" element={<ContentWrapper />} />
-                    <Route path="/totales" element={<ContentWrapper />} />
+                    <Route path="/totales" element={<ContentRowTop />} />
                     <Route path="/lastGame" element={<Last />} />
                     <Route path="/lastUser" element={<LastU />} />
                     <Route path="/product/:id"  element={<DetailGame />} />

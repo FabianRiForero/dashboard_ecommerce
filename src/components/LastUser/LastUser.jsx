@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 function LastUser({ id, fullname, email, profileimage }) {
     return (
@@ -16,7 +16,7 @@ function LastUser({ id, fullname, email, profileimage }) {
                             <p>Correo Electronico: {email}</p>
                         </div>
 
-                        <Link className="btn btn-danger" rel="nofollow" to={`/users/${id}`}>Ver detalles del usuario</Link>
+                        {/* <Link className="btn btn-danger" rel="nofollow" to={`/users/${id}`}>Ver detalles del usuario</Link> */}
                     </div>
                 </div>
             </div>
